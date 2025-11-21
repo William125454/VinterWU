@@ -1,0 +1,77 @@
+#container {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: 15vh 75vh 15vh 125vh 20vh;
+    grid-template-areas:
+        "hd"
+        "mn"
+        "nv"
+        "mn2"
+        "dv";
+        
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+
+#huvud {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    grid-area: hd;
+    background-color: #27ae60;
+}
+
+#huvud h1,{
+    color: azure;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    grid: flex;
+    align-self: center;
+}
+
+
+
+#bil1{
+    height: 125px;
+    width: auto;
+}
+#huvud p{
+    color: azure;
+    margin: 20px;
+    cursor: pointer;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+#main1 {
+    display: grid;
+    grid-area: mn;
+    background-image: url("../img/natur.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+
+#nav1 {
+    display: grid;
+    grid-area: nv;
+    background-color: #27ae60;
+}
+
+#main2{
+    grid-area: mn2;
+    background-color: ghostwhite
+}
+
+#div1 {
+    display: grid;
+    grid-area: dv;
+    background-color: gray;
+}
