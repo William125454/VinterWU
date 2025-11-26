@@ -1,77 +1,156 @@
-#container {
-    display: grid;
-    height: 100vh;
-    grid-template-columns: 1fr;
-    grid-template-rows: 15vh 75vh 15vh 125vh 20vh;
-    grid-template-areas:
-        "hd"
-        "mn"
-        "nv"
-        "mn2"
-        "dv";
-        
-}
+    #container {
+        display: grid;
+        height: 100vh;
+        grid-template-columns: 1fr;
+        grid-template-rows: 14vh 71vh 12vh 125vh 20vh;
+        grid-template-areas:
+            "hd"
+            "mn"
+            "nv"
+            "mn2 mn2"
+            "dv";
 
-body, html {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-}
+    }
 
-
-#huvud {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    grid-area: hd;
-    background-color: #27ae60;
-}
-
-#huvud h1,{
-    color: azure;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    grid: flex;
-    align-self: center;
-}
+    body,
+    html {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
 
 
+    #huvud {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        grid-area: hd;
+        background-color: #27ae60;
+        justify-content: space-between;
+    }
 
-#bil1{
-    height: 125px;
-    width: auto;
-}
-#huvud p{
-    color: azure;
-    margin: 20px;
-    cursor: pointer;
-    font-size: 20px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
+    h1 {
+        color: black;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        grid: flex;
+        font-weight: 800;
 
 
-#main1 {
-    display: grid;
-    grid-area: mn;
-    background-image: url("../img/natur.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    }
+
+
+
+    #bil1 {
+        height: 125px;
+        width: auto;
+    }
+
+    #huvud p {
+        margin: 20px;
+        cursor: pointer;
+        font-size: 20px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: black;
+        font-weight: 600;
+        display: flex;
+
+
+    }
+
+    .header-title {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+
+
+    .header-nav {
+        display: flex;
+        flex-direction: row;
+        padding-right: 200px;
+    }
+
+
+    #main1 {
+        display: grid;
+        grid-area: mn;
+        background-image: url("../img/natur.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+
+    }
+
+    #nav1 {
+        display: flex;
+        grid-area: nv;
+        background-color: #27ae60;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    #nav1 img {
+        width: 50px;
+        height: auto;
+        filter: brightness(0) invert(1);
+
+    }
+
+    #nav1 {
+        display: flex;
+        align-items: center;
+    }
+
+
+
+    #main2 {
+        grid-area: mn2;
+        background-color: ghostwhite;
+        padding: 20px;
+    }
+
+    .card-container {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 20px;
+
+    }
+
+    .card {
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        overflow: hidden;
+        width: 300px;
+        height: 400px;
+        text-align: center;
+        transition: transform 0.3s;
+        align-items: flex-start  ;
     
-}
+    }
+    .card img{
+        height: 60%;
+        width: 100%;
+        object-fit: cover;
+    }
+    .card h3{
+        margin: 10px 0 5px;
+    }
+    .card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+    }
 
-#nav1 {
-    display: grid;
-    grid-area: nv;
-    background-color: #27ae60;
-}
 
-#main2{
-    grid-area: mn2;
-    background-color: ghostwhite
-}
+    #div1 {
+        display: grid;
+        grid-area: dv;
+        background-color: gray;
+    }
 
-#div1 {
-    display: grid;
-    grid-area: dv;
-    background-color: gray;
-}
+    a {
+        color: black;
+        text-decoration: none;
+    }
