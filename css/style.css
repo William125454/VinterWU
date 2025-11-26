@@ -1,14 +1,14 @@
     #container {
         display: grid;
         height: 100vh;
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1fr;
         grid-template-rows: 14vh 71vh 12vh 125vh 20vh;
         grid-template-areas:
-            "hd"
-            "mn"
-            "nv"
+            "hd hd"
+            "mn mn"
+            "nv nv"
             "mn2 mn2"
-            "dv";
+            "dv dv ";
 
     }
 
@@ -108,6 +108,9 @@
         grid-area: mn2;
         background-color: ghostwhite;
         padding: 20px;
+        align-self: flex-start;
+        display: flex;
+        flex-wrap: wrap;
     }
 
     .card-container {
@@ -127,7 +130,6 @@
         height: 400px;
         text-align: center;
         transition: transform 0.3s;
-        align-items: flex-start  ;
     
     }
     .card img{
