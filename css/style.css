@@ -30,7 +30,7 @@
     }
 
     h1 {
-        color: black;
+        color: white;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         grid: flex;
         font-weight: 800;
@@ -50,7 +50,7 @@
         cursor: pointer;
         font-size: 20px;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        color: black;
+        color: white;
         font-weight: 600;
         display: flex;
 
@@ -106,11 +106,12 @@
 
     #main2 {
         grid-area: mn2;
-        background-color: ghostwhite;
+        background-color: white;
         padding: 20px;
         align-self: flex-start;
         display: flex;
         flex-wrap: wrap;
+        gap: 20px;
     }
 
     .card-container {
@@ -126,23 +127,27 @@
         border-radius: 10px;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         overflow: hidden;
-        width: 300px;
-        height: 400px;
+        width: 280px;
+        height: 500px;
         text-align: center;
         transition: transform 0.3s;
-    
+
     }
-    .card img{
+
+    .card img {
         height: 60%;
         width: 100%;
         object-fit: cover;
     }
-    .card h3{
+
+    .card h3 {
         margin: 10px 0 5px;
     }
+
     .card:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+        transform: translateY(-40px);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+        transform: scale(1.1);
     }
 
 
@@ -153,6 +158,107 @@
     }
 
     a {
-        color: black;
+        color: white;
         text-decoration: none;
     }
+
+    a:hover {
+        color: black;
+
+    }
+
+    .bild_p {
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        display: grid;
+        text-align: center;
+
+
+
+    }
+
+    button {
+        background-color: #27ae60;
+        border-radius: 20px;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background-color: blue;
+    }
+
+    .guide-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 15vh 35vh auto 10vh;
+        grid-template-areas:
+            "hd"
+            "mn3"
+            "cards"
+            "ft";
+        min-height: 100vh;
+    }
+
+    #guide-header {
+        grid-area: hd;
+        background-color: #27ae60;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 40px;
+    }
+
+    .header-nav a {
+        color: white;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 18px;
+    }
+
+    .header-nav {
+        display: flex;
+        gap: 20px;
+    }
+
+    #mn3{
+        grid-area: mn3;
+        width: 100%;
+        height: 500px;
+        overflow: hidden;
+    }
+
+    #mn3 img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .cards-guide{
+        grid-area: cards;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .card-guide{
+        display: flex;
+        gap: 20px;
+        background-color: #27ae60;
+        border-radius: 20px;
+        overflow: hidden;
+
+        
+    }
+    .card-guide:hover{
+        
+    }
+
+    .card-image{
+        height: 500px;
+        object-fit: cover;
+    }
+    
+
+   
