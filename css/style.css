@@ -187,6 +187,7 @@
     button:hover {
         background-color: blue;
     }
+    
 
     .guide-container {
         display: grid;
@@ -221,20 +222,21 @@
         gap: 20px;
     }
 
-    #mn3{
+    #mn3 {
         grid-area: mn3;
         width: 100%;
         height: 500px;
         overflow: hidden;
+        position: relative;
     }
 
-    #mn3 img{
+    #mn3 img {
         width: 100%;
         height: 100%;
         object-fit: cover;
     }
 
-    .cards-guide{
+    .cards-guide {
         grid-area: cards;
         display: flex;
         flex-direction: column;
@@ -242,23 +244,30 @@
         padding: 20px;
     }
 
-    .card-guide{
+    .card-guide {
         display: flex;
         gap: 20px;
         background-color: #27ae60;
         border-radius: 20px;
         overflow: hidden;
 
-        
-    }
-    .card-guide:hover{
-        
+
     }
 
-    .card-image{
+    .card-image {
         height: 500px;
         object-fit: cover;
     }
-    
 
-   
+    .mn3-text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        text-align: center;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 50px;
+    }
+
+    
