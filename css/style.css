@@ -131,8 +131,14 @@
         height: 500px;
         text-align: center;
         transition: transform 0.3s;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding-bottom: 10px;
 
     }
+
+  
 
     .card img {
         height: 60%;
@@ -176,12 +182,16 @@
 
     }
 
-    button {
+    .card button {
         background-color: #27ae60;
         border-radius: 20px;
         border: none;
         padding: 10px 20px;
         cursor: pointer;
+        width: auto;
+        max-width: 100px;
+        margin: 0 auto;
+        display: block;
     }
 
     button:hover {
@@ -237,9 +247,9 @@
     }
 
     .cards-guide {
-        grid-area: cards;
         display: flex;
-        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
         gap: 20px;
         padding: 20px;
     }
@@ -247,7 +257,7 @@
     .card-guide {
         display: flex;
         gap: 20px;
-        background-color: #27ae60;
+        background-color: wheat;
         border-radius: 20px;
         overflow: hidden;
 
@@ -269,5 +279,7 @@
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         font-size: 50px;
     }
+    
+    
 
     
